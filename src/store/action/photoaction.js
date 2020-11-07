@@ -26,7 +26,7 @@ export const fetchFromApi =(inputValue,selectValue)=>{
     return(dispatch)=>{
         dispatch(fetchPhotoStart())
             return axios.get("/photos",{
-                params: { client_id:'pP1VR0q4_2Q8Jc71pIi6bt11j9PK_nUVQF7WW7TVEMI',query: inputValue,collections:selectValue,per_page:50}
+                params: { client_id:'pP1VR0q4_2Q8Jc71pIi6bt11j9PK_nUVQF7WW7TVEMI',query: inputValue,collections:selectValue,per_page:100}
             }).then((response)=>{
                 console.log(response.data);
                 dispatch(fetchPhotoSuccess(response.data))

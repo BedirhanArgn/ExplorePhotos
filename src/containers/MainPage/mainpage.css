@@ -5,3 +5,26 @@
     top: calc( 50% - ( 50px / 2) ); 
     right: calc( 50% - ( 50px / 2) ); 
 }
+.error-handle {
+    margin: 0 auto;
+    border: 2px;
+    border-radius: 10px;
+    width: 940px;
+    height: 62px;
+    box-shadow: none;
+    opacity: 0.5;
+    background-color: #FF4A4A;
+    width: 40%;
+    font-size: 20px;
+}
+.error-handle span {
+color:black;
+display: flex;
+align-items: center;
+padding-top: 15px;
+justify-content: center;
+font-weight: 700;
+opacity: 1 !important;
+outline: hidden;
+}
+ 

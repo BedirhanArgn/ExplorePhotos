@@ -5,10 +5,4 @@
     grid-gap:2px 10px;
     grid-auto-rows: auto;
 }
-.image-list img{
-    width:250px;
-}
-img{
-    cursor: pointer;
 
-}

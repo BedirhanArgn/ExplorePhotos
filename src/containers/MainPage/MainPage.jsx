@@ -32,37 +32,37 @@ const MainPage = () => {
     dispatch(actions.fetchFromApi(inputVal, selectValue, pageNo))
   }
 
-
-
   const callBackFunction = (childData) => {
     setInputVal(childData.inputValue)
     setSelectValue(childData.selectedValue)
   }
 
-
   return (
     <>
       <Navbar parentCallBack={callBackFunction} />
-      {loading === false && searched ? (
+      {loading === false && searched && totalPages !== 0 ? (
         <div className="container">
           <Images images={searched}></Images>
           <div className="paging" >
             {pageNo > 1 ? (
-              <button className="paging-button-pre" onClick={() => handlePrevious()}>Previous</button>
-            ) : <button className="paging-button-pre-disable">Previous</button>}
+              <button className="paging-button-pre" onClick={() => handlePrevious()}>Previous Page</button>
+            ) : <button className="paging-button-pre-disable">Previous Page</button>}
             {totalPages > pageNo ? (
-              <button className="paging-button-next" onClick={() => handleNext()}>Next</button>
-            ) : <button className="paging-button-next-disable">Next</button>}
+              <button className="paging-button-next" onClick={() => handleNext()}>Next Page</button>
+            ) : <button className="paging-button-next-disable">Next Page</button>}
           </div>
         </div>
       )
         : (
-          <div className="spinner-border" role="status">
-            <img src={loaderImg} width="70%"></img>
-          </div>
+          <>
+            {totalPages !== 0 ?
+              <div className="spinner-border" role="status">
+                <img src={loaderImg} width="70%"></img>
+              </div>
+              : ""}
+          </>
         )
       }
-
       {loading === false && totalPages === 0 ? (
         <div className="container">
           <div className="error-handle">

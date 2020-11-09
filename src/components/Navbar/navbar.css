@@ -1,188 +1,80 @@
 * {
   box-sizing: border-box;
 }
-/*
-.nav {  
-  height: 120px;
-  padding-top:20px;
-  width: 100%;
-  background-color:#050417;
-  position: fixed; 
-  overflow: hidden;
-}
 
-.nav > .nav-header {
-position: relative;
-left: 200px;
-display: inline;
-
-}
-
-.nav-textinput {
-  margin-left: 86px;
-  display: inline;
-}
-
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  vertical-align: middle;
-  color: #fff;
-}
-
-.nav-textinput>input[type=text] {
-  max-width:400px;
-  width: 25%;
-  height: 50px;
-  padding: 14px 15px;
-  border-radius: 10px;
-  border-style: solid;
-  outline: none;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 600;
-}
-
-.nav-textinput>input[type=text]::placeholder{
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.nav-select{
-  display: inline-block;
-  margin-left: 3%;
-  width: 22%;
-}
-
-.select-css {
-  background-color: rgb(255,255,255);
-  font-size: 16px;
-  font-weight: 700;
-  color: #444;
-  height: 50px;
-  max-width: 400px;
-  width: 100%;
-  outline: none;
-  line-height: 1.3;
-  padding: .6em 1.4em .5em .8em;
-  margin: 0;
-  border: 1px solid #aaa;
-  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-  border-radius: 10px;
-  appearance: none;
-  background-color: #fff;
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-    linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
-  background-repeat: no-repeat, repeat;
-  background-position: right .7em top 50%, 0 0;
-  background-size: .65em auto, 100%;
-}
-
-.submit-button {
-display: inline-block;
-width: 30%;
-margin-left: 2%;
-}
-
-
-.submit-button>button {
-border-style: none;
-cursor: pointer;
-height: 50px;
-width: 100%;
-font-weight: 800;
-max-width: 246px;
-border-radius: 25px;
-outline: none;
-font-size: 14px;
-font-family:'Open Sans', sans-serif;
-color: #ffffff;
-overflow: hidden;
-background-color: #2a2b8d;
-}
-
-.submit-button>button:hover {
-background-color: #5a6074;
-}
-.form {
- display: inline;
-}
-*/
-.nav{
-  background-color:#050417;
+.nav {
+  background-color: #050417;
   height: 120px;
   width: 100%;
   position: fixed;
   flex-direction: row;
 }
 
-.nav-title{
+.nav-title {
   position: relative;
   vertical-align: middle;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
 }
-.nav-title img{
-position: relative;
-margin-left: 50px;
-margin-top: 25px;
-width: 70px;
-height: 70px;
-margin-right: 86px;
+
+.nav-title img {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+  margin-right: 86px;
 }
 
-
-.nav-header{
-display: flex;
-flex-wrap: nowrap;
+.nav-header {
+  display: flex;
+  flex-wrap: nowrap;
 }
-
 
 .nav .form {
-display: flex;
-justify-content:space-around;
-align-items: flex-end;
-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .nav-textinput input {
-    width: 400px;
-    height: 50px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    margin-right: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 4px;
-    font-style: normal;
-    width: 400px;
-    height: 50px;
-    padding:.375rem .75rem;
-    outline: none;
+  width: 400px;
+  height: 50px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-right: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4px;
+  font-style: normal;
+  width: 400px;
+  height: 50px;
+  padding-left: 22px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  outline: none;
+}
 
-  }
-
-.nav-select select{
+.nav-select select {
   width: 400px;
   height: 50px;
   margin-top: 35px;
   margin-bottom: 35px;
   margin-right: 52px;
-  padding-left: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 22px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   border-radius: 4px;
   line-height: 19px;
-
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 700;
-    color: #050417;
-    cursor: pointer;
-    outline: none;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #050417;
+  cursor: pointer;
+  outline: none;
 }
 
 .submit-button button {
@@ -198,6 +90,10 @@ width: 100%;
   border: #2A2B8D;
   line-height: 19.07px;
   margin-bottom: 35px;
+}
+
+.submit-button button:hover {
+  background-color: #2F34B2;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -223,7 +119,6 @@ width: 100%;
   }
 }
 
-
 @media only screen and (max-width: 1100px) {
   .nav-title img {
     margin-right: 10px;
@@ -245,53 +140,44 @@ width: 100%;
   }
 }
 
-
 @media only screen and (max-width: 900px) {
   .nav-title img {
     margin-left: 10px;
   }
 }
 
-
-
-@media (max-width: 700px) {
-
-.nav{
-  height: 180px;
-  overflow: hidden;
-}
+@media only screen and (max-width: 700px) {
+  .nav {
+    height: 180px;
+    overflow: hidden;
+  }
   .nav .form {
     display: block;
-      
-    }
-    .form {
-      margin-left: 50px;
-    }
-    .nav-select select {
-      margin: 0;
-      height: 40px;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
-    }
-    .nav-textinput input {
-      margin: 0;
-      margin-top: 10px;
+  }
+  .form {
+    margin-left: 50px;
+  }
+  .nav-select select {
+    margin: 0;
     height: 40px;
     margin-bottom: 10px;
-      padding-bottom: 5px;
-
-    }
-  
-   
+    padding-bottom: 5px;
+  }
+  .nav-textinput input {
+    margin: 0;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
 }
 
-
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .form {
     margin-left: 10px;
   }
   .submit-button button {
     width: 80px;
-    height:50px;
+    height: 50px;
   }
 }

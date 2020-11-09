@@ -45,8 +45,6 @@ const DetailPage = (props) => {
 
   }
 
-
-
   return (
     <>
       <div className="popup-box">

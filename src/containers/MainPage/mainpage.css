@@ -1,109 +1,121 @@
 .spinner-border {
-    display: block;
-    position: fixed;
-    z-index: 1031;
-    left: calc( 50% - ( 50px / 2));
-    top: calc( 50% - ( 50px / 2) ); 
-    right: calc( 50% - ( 50px / 2) ); 
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  left: calc( 50% - ( 50px / 2));
+  top: calc( 50% - ( 50px / 2));
+  right: calc( 50% - ( 50px / 2));
 }
 
 .error-handle {
-    margin: 0 auto;
-    border: 2px;
-    border-radius: 10px;
-    width: 940px;
-    height: 62px;
-    box-shadow: none;
-    opacity: 0.5;
-    background-color: #FF4A4A;
-    width: 40%;
-    font-size: 20px;
-}
-.error-handle span {
-color:black;
-display: flex;
-align-items: center;
-padding-top: 15px;
-justify-content: center;
-font-weight: 700;
-opacity: 1 !important;
-outline: hidden;
+  margin: 0 auto;
+  border: 2px;
+  border-radius: 10px;
+  min-height: 62px;
+  margin-top: 30px;
+  box-shadow: none;
+  opacity: 0.5;
+  Max-width: 960px;
+  background-color: #FF4A4A;
+  font-size: 20px;
+  overflow: hidden;
 }
 
-.paging{
-    display: block;
-    max-height: 150px;
-    width: 300px;
-    text-align: center;
-    float:right;
+.error-handle span {
+  color: black;
+  display: flex;
+  max-width: 940px;
+  align-items: center;
+  padding-top: 15px;
+  width: 100%;
+  justify-content: center;
+  font-weight: 700;
+  opacity: 1 !important;
 }
+
+.paging {
+  display: block;
+  max-height: 150px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
 .paging-button-next {
-    border: 1px solid #D5D7E5;
-    box-sizing: border-box;
-    border-radius: 2px;
-    font-weight: 700;
-    width:93px;
-    height:42px;
-    text-align:center;
-    line-height:1.1em;
-    font-size:14px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    color: #050417;
-    margin-left: 5px;
-    margin-top: 80px;
-    margin-bottom: 152px;
-  }
-  .paging-button-pre {
-   
-    border: 1px solid #D5D7E5;
-    box-sizing: border-box;
-    font-weight: 700;
-    width:93px;
-    border-radius: 10px;
-    height:42px;
-    text-align:center;
-    line-height:1.1em;
-    font-size:14px;
-    background: #FFFFFF;
-    color: #050417;
-    margin-right: 5px;
-    margin-top: 70px;
-    margin-bottom: 152px;
-  }
-  .paging-button-pre-disable {
-    border: 1px solid #D5D7E5;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-style: normal;
-    font-weight: 700;
-    width:93px;
-    height:42px;
-    text-align:center;
-    line-height:1.1em;
-    font-size:14px;
-    background: #FFFFFF;
-    color:#827e7e;
-    margin-right: 5px;
-    margin-top: 70px;
-    margin-bottom: 152px;
-  }
-  .paging-button-next-disable {
-    
-    border: 1px solid #D5D7E5;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-style: normal;
-    font-weight: 700;
-    width:93px;
-    height:42px;
-    text-align:center;
-    line-height:1.1em;
-    font-size:14px;
-    background: #FFFFFF;
-    color: #827e7e;
-    margin-left: 5px;
-    margin-top: 70px;
-    margin-bottom: 152px;
-  }
- 
+  border: 1px solid #D5D7E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-weight: 800;
+  width: 120px;
+  height: 42px;
+  background-color: #2A2B8D;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  margin-left: 5px;
+  margin-top: 80px;
+  margin-bottom: 152px;
+  outline: none;
+}
+
+.paging-button-pre {
+  border: 1px solid #D5D7E5;
+  box-sizing: border-box;
+  font-weight: 800;
+  width: 120px;
+  border-radius: 10px;
+  height: 42px;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 14px;
+  background-color: #2A2B8D;
+  color: white;
+  margin-right: 5px;
+  margin-top: 70px;
+  margin-bottom: 152px;
+  outline: none;
+}
+
+.paging-button-pre-disable {
+  border: 1px solid #D5D7E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 800;
+  width: 120px;
+  height: 42px;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 14px;
+  background-color: #2A2B8D;
+  color: #827e7e;
+  margin-right: 5px;
+  margin-top: 70px;
+  margin-bottom: 152px;
+  outline: none;
+}
+
+.paging-button-next-disable {
+  border: 1px solid #D5D7E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 800;
+  width: 120px;
+  height: 42px;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 14px;
+  background-color: #2A2B8D;
+  color: #827e7e;
+  margin-left: 5px;
+  margin-top: 70px;
+  margin-bottom: 152px;
+  outline: none;
+}
+
+.paging button:hover {
+  background-color: #2F34B2;
+}

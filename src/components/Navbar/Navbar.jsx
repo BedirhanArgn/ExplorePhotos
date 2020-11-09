@@ -29,7 +29,7 @@ const Navbar = (props) => {
         </div>
         <form className="form" onSubmit={handleSubmit}>
           <div className="nav-textinput">
-            <input type="text" value={inputValue} placeholder="Try Istanbul .etc" onChange={e => setInputValue(e.target.value)} />
+            <input type="text" value={inputValue} placeholder="Query" onChange={e => setInputValue(e.target.value)} />
           </div>
           <div className="nav-select">
             <select value={selectValue} className="select-css" onChange={e => setSelectValue(e.target.value)}>

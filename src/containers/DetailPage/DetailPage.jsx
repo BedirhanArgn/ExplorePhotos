@@ -47,54 +47,48 @@ const DetailPage = (props) => {
 
   return (
     <>
-      <div className="popup-box">
-        <div className="box">
-          <span className="close-icon" onClick={props.handleClose}>
-            x
-        </span>
-          <div className="image">
-            <img src={`${props.imageInfo.urls.regular}`}></img>
+
+      <div className="image">
+        <img src={`${props.imageInfo.urls.regular}`}></img>
+      </div>
+      <div className="info">
+        <div className="userInfo">
+          <img src={profile_image.medium} alt={name} className="user-photo" />
+        </div>
+        <div className="user-text">
+          <div className="user-link">
+            <span>{props.imageInfo.user.name}</span>
           </div>
-          <div className="info">
-            <div className="userInfo">
-              <img src={profile_image.medium} alt={name} className="user-photo" />
-            </div>
-            <div className="user-text">
-              <div className="user-link">
-                <span>{props.imageInfo.user.name}</span>
-              </div>
-              <div className="user-profile">
-                <a href={`https://unsplash.com/${username}`}>@{username}</a>
-              </div>
-            </div>
-            <div className="download-link">
-              <span className="download-icon">
-                <img src={icon}></img></span>
-              <a href={props.imageInfo.urls.full}>Download
+          <div className="user-profile">
+            <a href={`https://unsplash.com/${username}`}>@{username}</a>
+          </div>
+        </div>
+        <div className="download-link">
+          <span className="download-icon">
+            <img src={icon}></img></span>
+          <a href={props.imageInfo.urls.full}>Download
               </a>
-            </div>
-          </div>
-          {mapUrl && <div className="map">
-            <div>
-              <div>
-                <a
-                  href={`https://www.openstreetmap.org/search?query=${location.title}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={`${api.openStrepMapBase}?${mapUrl}`}
-                    alt={location.title}
-                  />
-                </a>
-              </div>
-              <div className="location-title-container">
-                <span className="location">{location.title}</span>
-              </div>
-            </div>
-          </div>}
         </div>
       </div>
+      {mapUrl && <div className="map">
+        <div>
+          <div>
+            <a
+              href={`https://www.openstreetmap.org/search?query=${location.title}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`${api.openStrepMapBase}?${mapUrl}`}
+                alt={location.title}
+              />
+            </a>
+          </div>
+          <div className="location-title-container">
+            <span className="location">{location.title}</span>
+          </div>
+        </div>
+      </div>}
     </>
   );
 };

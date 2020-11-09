@@ -1,11 +1,11 @@
 import React from 'react';
 import './images.css';
 import Card from './Card'
-const Images=(props)=> {
-    
-    const images = props.images.map((image)=>{
-        return(
-        <Card key={image.id} image={image}  />
+const Images = (props) => {
+
+    const images = props.images.map((image) => {
+        return (
+            <Card key={image.id} image={image} />
         )
     });
 

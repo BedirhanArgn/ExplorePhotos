@@ -34,12 +34,6 @@ const MainPage = () => {
 
 
 
-  const notData = (<> <Navbar />
-    <div className="container">
-      <p>NOt data</p>
-    </div>
-  </>)
-
   const callBackFunction = (childData) => {
     setInputVal(childData.inputValue)
     setSelectValue(childData.selectedValue)
@@ -55,10 +49,10 @@ const MainPage = () => {
           <div className="paging" >
             {pageNo > 1 ? (
               <button className="paging-button-pre" onClick={() => handlePrevious()}>Previous</button>
-            ) : <button className="paging-button-block-pre">Previous</button>}
+            ) : <button className="paging-button-pre-disable">Previous</button>}
             {totalPages > pageNo ? (
               <button className="paging-button-next" onClick={() => handleNext()}>Next</button>
-            ) : <button className="paging-button-block-next">Next</button>}
+            ) : <button className="paging-button-next-disable">Next</button>}
           </div>
         </div>
       )

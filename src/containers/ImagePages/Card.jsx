@@ -3,28 +3,18 @@ import './card.css'
 import DetailPage from '../DetailPage/DetailPage'
 const Card = ({ image }) => {
   const ref = React.createRef();
-  const [span, setSpan] = React.useState();
   const [isOpen, setIsOpen] = React.useState(false);
 
-  React.useEffect(() => {
-    ref.current.addEventListener('load', setSpans)
-  }, [])
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
   }
 
-  const setSpans = () => {
-    if (ref.current.clientHeight) {
-      const height = ref.current.clientHeight
-      const spans = Math.ceil(height / 10)
-      setSpan(spans);
-    }
-  };
+
   const { description, urls } = image;
   return (
     <>
-      <div style={{ gridRowEnd: `span ${span}` }}>
+      <div className="card-photo">
         <img
           className="list-image"
           ref={ref}

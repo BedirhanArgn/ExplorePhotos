@@ -9,11 +9,10 @@ const DetailPage = (props) => {
   const [photoInfo, setPhotoInfo] = React.useState('');
   const [mapUrl, setMapUrl] = React.useState('');
   const [location, setLocation] = React.useState()
-  const APP_KEY = "pP1VR0q4_2Q8Jc71pIi6bt11j9PK_nUVQF7WW7TVEMI";
+  const KEY = "pP1VR0q4_2Q8Jc71pIi6bt11j9PK_nUVQF7WW7TVEMI";
 
   React.useEffect(() => {
     fetchPhotoDetails();
-
   }, [])
 
   React.useEffect(() => {
@@ -22,7 +21,7 @@ const DetailPage = (props) => {
 
 
   const fetchPhotoDetails = async () => {
-    await fetch(`https://api.unsplash.com/photos/${props.imageInfo.id}?client_id=${APP_KEY}`)
+    await fetch(`https://api.unsplash.com/photos/${props.imageInfo.id}?client_id=${KEY}`)
       .then(response => response.json())
       .then(data => {
         setLocation(data.location)

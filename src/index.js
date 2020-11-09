@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom'
 import './index.css';
 import thunkMiddleware from "redux-thunk";
 import App from './App';
-import { createStore, combineReducers,applyMiddleware, compose  } from "redux";
+import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import { Provider } from 'react-redux';
 import photoReducer from "./store/reducer/photo";
 
@@ -16,10 +15,8 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMid
 
 const app = (
   <Provider store={store}>
-     <BrowserRouter>
-        <App />
-    </BrowserRouter>
-    </Provider>
+    <App />
+  </Provider>
 );
 
 ReactDOM.render(app, document.getElementById("root"));

@@ -25,7 +25,7 @@ const Navbar = (props) => {
     <div className="nav">
       <div className="nav-header">
         <div className="nav-title">
-          <img src={logo} style={{ width: "80px", height: "80px" }}></img>
+          <img src={logo}></img>
         </div>
         <form className="form" onSubmit={handleSubmit}>
           <div className="nav-textinput">
@@ -40,7 +40,7 @@ const Navbar = (props) => {
             </select>
           </div>
           <div className="submit-button">
-            <button type="submit" onClick={sendDatatoParent}>Search</button>
+            <button type="submit" onClick={sendDatatoParent}>SEARCH</button>
           </div>
         </form>
       </div>

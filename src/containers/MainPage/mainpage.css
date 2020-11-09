@@ -32,7 +32,10 @@ outline: hidden;
 
 .paging{
     display: block;
+    max-height: 150px;
+    width: 300px;
     text-align: center;
+    float:right;
 }
 .paging-button-next {
     border: 1px solid #D5D7E5;
@@ -68,7 +71,7 @@ outline: hidden;
     margin-top: 70px;
     margin-bottom: 152px;
   }
-  .paging-button-block-pre {
+  .paging-button-pre-disable {
     border: 1px solid #D5D7E5;
     box-sizing: border-box;
     border-radius: 10px;
@@ -85,20 +88,20 @@ outline: hidden;
     margin-top: 70px;
     margin-bottom: 152px;
   }
-  .paging-button-block-next {
+  .paging-button-next-disable {
     
     border: 1px solid #D5D7E5;
     box-sizing: border-box;
-    border-radius: 2px;
+    border-radius: 10px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     width:93px;
     height:42px;
     text-align:center;
     line-height:1.1em;
     font-size:14px;
     background: #FFFFFF;
-    color: #AAAAD1;
+    color: #827e7e;
     margin-left: 5px;
     margin-top: 70px;
     margin-bottom: 152px;

@@ -24,12 +24,14 @@ const MainPage = () => {
 
 
   const handlePrevious = () => {
-    setPageNo(pageNo - 1);
-    dispatch(actions.fetchFromApi(inputVal, selectValue, pageNo))
+    dispatch(actions.fetchFromApi(inputVal, selectValue, pageNo - 1))
+    setPageNo(pageNo - 1)
+
   }
   const handleNext = () => {
-    setPageNo(pageNo + 1);
-    dispatch(actions.fetchFromApi(inputVal, selectValue, pageNo))
+    dispatch(actions.fetchFromApi(inputVal, selectValue, pageNo + 1))
+    setPageNo(pageNo + 1)
+
   }
 
   const callBackFunction = (childData) => {
@@ -68,7 +70,6 @@ const MainPage = () => {
           <div className="error-handle">
             <span>Bu Kategoride Fotograf Bulunamadı</span>
           </div>
-
         </div>
       ) : ""}
     </>

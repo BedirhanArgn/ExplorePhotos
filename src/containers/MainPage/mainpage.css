@@ -30,7 +30,7 @@
   width: 100%;
   justify-content: center;
   font-weight: 700;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .paging {

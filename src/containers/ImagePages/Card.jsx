@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import './card.css'
 import DetailPage from '../DetailPage/DetailPage'
 import OutsideClickHandler from "react-outside-click-handler";

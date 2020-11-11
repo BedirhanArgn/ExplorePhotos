@@ -16,10 +16,8 @@ const Navbar = (props) => {
     dispatch(actions.fetchFromApi(inputValue, null, 1))
     props.parentCallBack({ 'inputValue': inputValue, 'selectedValue': selectValue })
   }, [])
-
   const sendDatatoParent = () => {
     props.parentCallBack({ 'inputValue': inputValue, 'selectedValue': selectValue })
-
   }
   return (
     <div className="nav">

@@ -5,7 +5,7 @@ import logo from '../../images/logo.png'
 import * as actions from '../../store/action/photoaction';
 const Navbar = (props) => {
   const [inputValue, setInputValue] = useState('istanbul');
-  const [selectValue, setSelectValue] = useState('nature')
+  const [selectValue, setSelectValue] = useState(3957566)
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -13,7 +13,7 @@ const Navbar = (props) => {
     dispatch(actions.fetchFromApi(inputValue, selectValue, 1))
   }
   React.useEffect(() => {
-    dispatch(actions.fetchFromApi(inputValue, null, 1))
+    dispatch(actions.fetchFromApi(inputValue, selectValue, 1))
     props.parentCallBack({ 'inputValue': inputValue, 'selectedValue': selectValue })
   }, [])
   const sendDatatoParent = () => {
@@ -35,6 +35,9 @@ const Navbar = (props) => {
               <option value="2141901">Europa</option>
               <option value="4315412">Party</option>
               <option value="785618">Concert</option>
+              <option value="1020971">Hallowen</option>
+              <option value="9454911">Basketball</option>
+              <option value="9717149">Coranvirus</option>
             </select>
           </div>
           <div className="submit-button">

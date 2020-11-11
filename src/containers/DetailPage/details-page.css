@@ -128,3 +128,8 @@
     float: center;
   }
 }
+
+.location {
+  font-weight: 700;
+  font-style: italic;
+}

@@ -21,7 +21,7 @@ Bu proje unsplash sitesindeki fotografları belirli collectionlarda yapılan sor
 <em>npm install</em> komutu kullanılarak proje bağımlıklıkları yüklenmelidir .
 Sonrasında <em>npm start</em> komutu verilerek proje local sunucuda çalıştırılabilir.
 ##Projenin Geliştirilmesi
-Projenin arayüzünde verdiğiniz tasarıma uygun olarak geliştirmeye çalıştım. Herhangi bir arayüz kütüphanesi kullanmadım. Ayrıca tasarımı responsive bir şekilde tasarladım. Projenin state yönetimini redux ile sağladım. Böylece istediğim verilere bir store üzerinden erişim sağladım. Detail sayfasını tasarlarken open street map kullandım. Tıklanan resimin location verileri sayesinde kesin konum verisi elde edebildim.
+Projenin arayüzünde verdiğiniz tasarıma uygun olarak geliştirmeye çalıştım. Herhangi bir arayüz kütüphanesi kullanmadım. Ayrıca tasarımı responsive bir şekilde tasarladım. Projenin state yönetimini redux ile sağladım. Böylece istediğim verilere bir store üzerinden erişim sağladım. Detail sayfasını tasarlarken open street map kullandım. Tıklanan resmin location verileri sayesinde kesin konum verisi elde edebildim.
 ##Kullanılan Kütüphaneler
 Projede istekleri göndermek ve almak için axios isimli bir kütüphane kullandım.
 

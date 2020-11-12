@@ -37,7 +37,7 @@ const Navbar = (props) => {
               <option value="785618">Concert</option>
               <option value="1020971">Hallowen</option>
               <option value="9454911">Basketball</option>
-              <option value="9717149">Coranvirus</option>
+              <option value="9717149">Coranavirus</option>
             </select>
           </div>
           <div className="submit-button">

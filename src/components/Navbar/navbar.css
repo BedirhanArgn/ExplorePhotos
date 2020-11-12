@@ -90,6 +90,7 @@
   border: #2A2B8D;
   line-height: 19.07px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .submit-button button:hover {

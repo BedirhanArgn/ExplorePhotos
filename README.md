@@ -1,4 +1,4 @@
-# Hipo Unsplash API Projesi
+#Unsplash API Projesi
 Bu proje unsplash sitesindeki fotografları belirli collectionlarda yapılan sorguya göre görüntüleyen bir uygulamadır. İstediğiniz bir keyword ile belirtilen koleksiyonlarda arama yapabilirsiniz. Görüntülenen fotografın detaylarını ve konum bilgilerini elde edebilirsiniz. Projeye https://secret-badlands-38678.herokuapp.com/ bu linkten ulaşabilirsiniz.
 ```
 ├──src 
